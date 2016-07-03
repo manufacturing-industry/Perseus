@@ -2,11 +2,12 @@
   "name": "manufacturing-industry/perseus",
   "description": "Perseus is a command line service runner based on Symfony Console",
   "license": "MIT",
-  "keywords": ["php", "symfony", "command line", "runner", "task runner"],
+  "keywords": ["php", "symfony", "command line", "runner", "task runner", "cl", "modular"],
   "authors": [
     {
       "name": "Ryan Rentfro",
-      "email": "rrentfro@gmail.com"
+      "email": "rrentfro@gmail.com",
+      "homepage": "https://github.com/SourceCode"
     }
   ],
   "require": {
