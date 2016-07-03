@@ -3,3 +3,4 @@ composer.lock
 
 # DIRECTORIES
 vendor/
+.idea/
