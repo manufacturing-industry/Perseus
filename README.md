@@ -1,5 +1,5 @@
 #Perseus
-Perseus is a command line service runner based on Symfony Console
+Perseus is a command line service runner boilerplate based on Symfony Console
 
 ##Installation
 Perseus is a PSR-4 compatible package.  You can install it via composer as a package in your application.
@@ -34,7 +34,7 @@ You can easily add commands to the console by supplying an array of class names 
 #####Example PHP:
 ```php
 //commands is an array of class names that are symfony console commands in the perseus namespace
-$commands = array('TestCommand', 'TestCommand2'), 'AnotherCommand');
+$commands = array('TestCommand', 'TestCommand2', 'AnotherCommand');
 new Perseus($commands);
 ```
 
