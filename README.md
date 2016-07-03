@@ -7,4 +7,4 @@ Perseus is a command line service runner based on Symfony Console
 MIT
 
 ### Authors
-- Ryan Rentfro - http://rentfro.net
+- Ryan Rentfro - https://github.com/SourceCode
