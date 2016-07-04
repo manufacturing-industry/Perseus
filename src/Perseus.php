@@ -25,20 +25,21 @@ class Perseus
      *
      * @param array $commands An array of commands in the Perseus\Console\Command namespace
      */
-    public function __construct(array $commands = array())
+    public function __construct(array $commands)
     {
         require_once('../vendor/autoload.php');
         $application = new Application();
         $application->add(new Console\Command\About());
-        if (count($commands) > 0) foreach($commands as $class)
+
+        if (count($commands) > 0)
         {
-            $class = 'Console\Command\\' . $class;
-            $application->add(new $class());
+            foreach($commands as $class)
+            {
+
+                $class = 'Perseus\Console\Command\\' . $class;
+                $application->add(new $class());
+            }
         }
         $application->run();
     }
 }
-
-//if perseus should not auto-engage then die
-if (isset($disablePerseusLoader) && $disablePerseusLoader) die();
-else new Perseus();

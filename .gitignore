@@ -1,5 +1,7 @@
 # FILES
 composer.lock
+*.sublime-workspace
+*.sublime-project
 
 # DIRECTORIES
 vendor/
