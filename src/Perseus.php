@@ -27,7 +27,6 @@ class Perseus
      */
     public function __construct(array $commands)
     {
-        require_once('../vendor/autoload.php');
         $application = new Application();
         $application->add(new Console\Command\About());
 
